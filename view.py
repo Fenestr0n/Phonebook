@@ -1,11 +1,8 @@
 menu = '''Телефонный справочник:
 1 - Просмотр
 2 - Добавить
-3 - Изменить
-4 - Удалить
-5 - Импорт
-6 - Экспорт
-7 - Выход
+3 - Экспорт
+4 - Выход
 '''
 
 
@@ -14,10 +11,8 @@ def display_menu():
         print(menu)    
         number = input(">>> ")
         if number.isdigit():
-            if int(number) in (1, 2, 3, 4, 5, 6):
+            if int(number) in (1, 2, 3, 4):
                 return int(number)
-            elif int(number) == 7:
-                break
 
 
 def get_view():
@@ -36,5 +31,6 @@ def add_user():
     email = input("Введите E-mail: ")
     user.append(email)
     return user
+
 
 
