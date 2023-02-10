@@ -8,8 +8,9 @@ def run_app():
             if num == 1:
                 view.get_view()
             elif num == 2:
-                model.writing_txt(view.add_user())
-                model.writing_csv(view.add_user())
+                user_info = view.add_user()
+                model.writing_txt(user_info)
+                model.writing_csv(user_info)
             elif num == 3:
                 pass
             elif num == 4:
