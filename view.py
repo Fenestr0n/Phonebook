@@ -15,6 +15,11 @@ def display_menu():
         number = input(">>> ")
         if number.isdigit():
             if int(number) in (1, 2, 3, 4, 5, 6):
-                return number
+                return int(number)
             elif int(number) == 7:
                 break
+
+
+def get_view():
+    with open("Phonebook.txt", 'r', encoding='utf-8') as file:
+        print(file.read())
