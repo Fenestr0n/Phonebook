@@ -33,4 +33,7 @@ def add_user():
     return user
 
 
+def export():
+    with open("Phonebook.csv", 'r', encoding='utf-8') as file:
+        print(file.read())
 

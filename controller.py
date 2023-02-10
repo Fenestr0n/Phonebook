@@ -12,6 +12,6 @@ def run_app():
                 model.writing_txt(user_info)
                 model.writing_csv(user_info)
             elif num == 3:
-                pass
+                view.export()
             elif num == 4:
                 break
