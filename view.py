@@ -30,6 +30,7 @@ def add_user():
     user.append(phone_number)
     email = input("Введите E-mail: ")
     user.append(email)
+    print()
     return user
 
 
