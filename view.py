@@ -1,5 +1,6 @@
 from random import randint
 
+
 menu = '''Телефонный справочник:
 1 - Просмотр
 2 - Добавить
@@ -18,7 +19,6 @@ def display_menu():
                 return int(number)
 
 
-
 def add_user():
     user = []
     user_id = randint(10, 10000)
@@ -33,6 +33,7 @@ def add_user():
     user.append(email)
     print()
     return user
+
 
 def export():
     print("Экспорт спрвочника завершен\n")

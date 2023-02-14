@@ -53,4 +53,4 @@ def reading_db():
     cur.close()
     conn.close()
     logger("Просмотр справочника завершен")
-    
+        
