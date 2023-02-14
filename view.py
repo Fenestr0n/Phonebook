@@ -3,8 +3,9 @@ from random import randint
 menu = '''Телефонный справочник:
 1 - Просмотр
 2 - Добавить
-3 - Экспорт
-4 - Выход
+3 - Экспорт в txt
+4 - Экспорт в csv
+5 - Выход
 '''
 
 
@@ -32,9 +33,3 @@ def add_user():
     user.append(email)
     print()
     return user
-
-
-def export():
-    with open("Phonebook.csv", 'r', encoding='utf-8') as file:
-        print(file.read())
-
