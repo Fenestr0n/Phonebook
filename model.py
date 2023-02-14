@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 def logger(msg):
-     with open("Phonebook.log", "a", encoding="utf-8") as file:
+     with open("Phonebook.logg", "a", encoding="utf-8") as file:    # Django stuff: *.log in .gitignore
         file.write(f"{datetime.now()}: {msg}\n")
 
 
