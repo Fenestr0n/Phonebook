@@ -16,3 +16,12 @@ def writing_db(user):
     cur = conn.cursor()
     cur.execute("INSERT INTO Phonebook VALUES(?, ?, ?, ?, ?);", user)
     conn.commit()
+
+
+def reading_db():
+    conn = sqlite3.connect("Phonebook.sqlite")
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM Phonebook;")
+    all_results = cur.fetchall()
+    for result in all_results:
+        print(f'Фамилия: {result[1]}\n\nИмя: {result[2]}\n\nТелефон: {result[3]}\n\nE-mail: {result[4]}\n\n\n')

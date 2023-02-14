@@ -17,10 +17,6 @@ def display_menu():
                 return int(number)
 
 
-def get_view():
-    with open("Phonebook.txt", 'r', encoding='utf-8') as file:
-        print(file.read())
-
 
 def add_user():
     user = []

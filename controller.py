@@ -6,7 +6,8 @@ def run_app():
         while True:
             num = view.display_menu()
             if num == 1:
-                view.get_view()
+                # view.get_view()
+                model.reading_db()
             elif num == 2:
                 user_info = view.add_user()
                 # model.writing_txt(user_info)
