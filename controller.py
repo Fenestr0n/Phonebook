@@ -12,8 +12,11 @@ def run_app():
                 model.writing_db(user_info)
             elif num == 3:
                 model.writing_txt()
+                view.export()
             elif num == 4:
-                pass
+                model.writing_csv()
+                view.export()
             elif num == 5:
+                model.logger("Выход из программы")
                 break
 

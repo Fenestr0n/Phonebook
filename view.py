@@ -14,7 +14,7 @@ def display_menu():
         print(menu)    
         number = input(">>> ")
         if number.isdigit():
-            if int(number) in (1, 2, 3, 4):
+            if int(number) in (1, 2, 3, 4, 5):
                 return int(number)
 
 
@@ -33,3 +33,6 @@ def add_user():
     user.append(email)
     print()
     return user
+
+def export():
+    print("Экспорт спрвочника завершен\n")
