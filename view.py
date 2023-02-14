@@ -1,3 +1,5 @@
+from random import randint
+
 menu = '''Телефонный справочник:
 1 - Просмотр
 2 - Добавить
@@ -22,6 +24,8 @@ def get_view():
 
 def add_user():
     user = []
+    user_id = randint(10, 10000)
+    user.append(user_id)
     last_name = input("Введите фамилию: ")
     user.append(last_name)
     first_name = input("Введите имя: ")

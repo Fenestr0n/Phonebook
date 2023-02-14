@@ -9,9 +9,11 @@ def run_app():
                 view.get_view()
             elif num == 2:
                 user_info = view.add_user()
-                model.writing_txt(user_info)
-                model.writing_csv(user_info)
+                # model.writing_txt(user_info)
+                # model.writing_csv(user_info)
+                model.writing_db(user_info)
             elif num == 3:
                 view.export()
             elif num == 4:
                 break
+
